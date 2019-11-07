@@ -1,0 +1,10 @@
+
+
+#EXERCISE TABLE;
+
+CREATE TABLE public.exercises (
+	bodypart varchar NULL,
+	area varchar NULL,
+	modality varchar NULL,
+	id serial NOT NULL
+);
