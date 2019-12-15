@@ -1,0 +1,20 @@
+3-Day Week
+
+Day1: Pec(3), Triceps(3)
+Day2: Back(2), Biceps(2), Shoulders(2)
+Day3: Leg(4), Abs(2)
+
+4-Day Week
+
+Day1: Pec++(4), Triceps--(2)
+Day2: Back++(4), Biceps--(2)
+Day3: Leg(4), Abs(2)
+Day4: Shoulder(2), Triceps(2), Biceps(2)
+
+5-Day Week
+
+Day1: Leg(4), Abs(2)
+Day2: Pec++(4), Triceps--(2)
+Day3: Back++(4), Biceps--(2)
+Day4: Leg(4), Abs(2)
+Day5: Shoulder(2), Triceps(2), Biceps(2)
