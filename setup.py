@@ -1,3 +1,3 @@
 from setuptools import setup, find_packages
 
-setup(name="EXERCISE", packages=find_packages())
+setup(name="exercise_gen_app", packages=find_packages())

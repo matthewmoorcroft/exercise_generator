@@ -14,7 +14,7 @@ class Database:
         try:
             self.conn = psycopg2.connect(
                 """dbname='exercise_gen'
-                  user='postgres'
+                  user='matthew'
                   host='localhost'
                   password='1245788956'""")
         except psycopg2.Error:
@@ -27,9 +27,9 @@ class Database:
         return cls.instance
 
     def add_exercise(self, name, muscle_group, area, tool):
+        cur = self.conn.cursor(cursor_factory=RealDictCursor)
 
         try:
-            cur = self.conn.cursor(cursor_factory=RealDictCursor)
 
             cur.execute("""INSERT INTO exercises (name,
                                                    muscle_group,
@@ -56,8 +56,8 @@ class Database:
 
     def get_exercises_from_muscle_group(self, muscle_group, number_exercises):
 
+        cur = self.conn.cursor(cursor_factory=RealDictCursor)
         try:
-            cur = self.conn.cursor(cursor_factory=RealDictCursor)
 
             cur.execute("""
                         SELECT *
@@ -85,10 +85,17 @@ class Database:
             print(e)
             return json.dumps({'result': "Error: Failed to extract exercises"})
 
+        result = {}
         exercises = []
         for row in rows:
             exercise = {}
-            exercise['name'] = row[0]
-            exercise['muscle_group'] = row[0]
-            exercise['name'] = row[0]
-            exercise['name'] = row[0]
+            exercise['name'] = row['name']
+            exercise['muscle_group'] = row['muscle_group']
+
+            logger.debug(exercise)
+            exercises.append(exercise)
+
+        result['exercises'] = exercises
+        result['result'] = "Success: Ok"
+
+        return result

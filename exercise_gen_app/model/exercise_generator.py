@@ -1,4 +1,4 @@
-from connections.database import Database
+from ..connections.database import Database
 import logging
 
 logger = logging.getLogger(__name__)
@@ -161,7 +161,7 @@ def day_builder(day):
         exercises = get_exercises_from_muscle_group(
             muscle_group=exercise['muscle_group'],
             number_exercises=exercise['number_exercises']
-        )
+        )['exercises']
 
         exercise_day.append(exercises)
     return exercise_day
