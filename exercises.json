@@ -1,0 +1,618 @@
+[
+  [
+    [
+      [
+        {
+          "name": "Calf Press",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Barbell Squat",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Seated Leg Curl",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Calf Raise - Standing",
+          "muscle_group": "Legs"
+        }
+      ],
+      [
+        {
+          "name": "Side-Plank (hip lift)",
+          "muscle_group": "Abdominals"
+        },
+        {
+          "name": "Alternating Heel Touch",
+          "muscle_group": "Abdominals"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Dumbbell Bench Press",
+          "muscle_group": "Chest"
+        },
+        {
+          "name": "Wide-Grip Push-Up",
+          "muscle_group": "Chest"
+        },
+        {
+          "name": "Dumbbell Fly",
+          "muscle_group": "Chest"
+        },
+        {
+          "name": "Twisting Dumbbell Bench Press",
+          "muscle_group": "Chest"
+        }
+      ],
+      [
+        {
+          "name": "V-Bar Tricep Pushdown",
+          "muscle_group": "Triceps"
+        },
+        {
+          "name": "Overhead Single Dumbbell Tricep Extension",
+          "muscle_group": "Triceps"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Back Raise",
+          "muscle_group": "Back"
+        },
+        {
+          "name": "Close-Grip Lat Pulldown",
+          "muscle_group": "Back"
+        },
+        {
+          "name": "Bent-Over Barbell Row",
+          "muscle_group": "Back"
+        },
+        {
+          "name": "Quadruped Alternating Superman",
+          "muscle_group": "Back"
+        }
+      ],
+      [
+        {
+          "name": "Seated Dumbbell Curl",
+          "muscle_group": "Biceps"
+        },
+        {
+          "name": "Single-Arm Dumbbell Curl w/ Incline Bench",
+          "muscle_group": "Biceps"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Dumbbell Calf Raise",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Lateral Step-Up",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Lying Leg Curl",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Calf Press",
+          "muscle_group": "Legs"
+        }
+      ],
+      [
+        {
+          "name": "Alternating Heel Touch",
+          "muscle_group": "Abdominals"
+        },
+        {
+          "name": "Front Plank (from knees)",
+          "muscle_group": "Abdominals"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Dumbbell Alternating Shoulder Press",
+          "muscle_group": "Shoulders"
+        },
+        {
+          "name": "Cable External Rotation",
+          "muscle_group": "Shoulders"
+        }
+      ],
+      [
+        {
+          "name": "Tricep Pushdown",
+          "muscle_group": "Triceps"
+        },
+        {
+          "name": "Dumbbell Kickback",
+          "muscle_group": "Triceps"
+        }
+      ],
+      [
+        {
+          "name": "Machine Curl",
+          "muscle_group": "Biceps"
+        },
+        {
+          "name": "Single-Arm Dumbbell Curl w/ Incline Bench",
+          "muscle_group": "Biceps"
+        }
+      ]
+    ]
+  ],
+  [
+    [
+      [
+        {
+          "name": "Calf Press",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Lunge",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Lying Leg Curl",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Calf Raise - Standing",
+          "muscle_group": "Legs"
+        }
+      ],
+      [
+        {
+          "name": "Reverse Crunch",
+          "muscle_group": "Abdominals"
+        },
+        {
+          "name": "Front Plank (from knees)",
+          "muscle_group": "Abdominals"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Twisting Dumbbell Bench Press",
+          "muscle_group": "Chest"
+        },
+        {
+          "name": "Kneeling Push-Up",
+          "muscle_group": "Chest"
+        },
+        {
+          "name": "Machine Bench Press",
+          "muscle_group": "Chest"
+        },
+        {
+          "name": "Wide-Grip Push-Up",
+          "muscle_group": "Chest"
+        }
+      ],
+      [
+        {
+          "name": "Lying Single-Arm Dumbbell Triceps Extension",
+          "muscle_group": "Triceps"
+        },
+        {
+          "name": "Assisted Dips",
+          "muscle_group": "Triceps"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Superman",
+          "muscle_group": "Back"
+        },
+        {
+          "name": "Close-Grip Lat Pulldown",
+          "muscle_group": "Back"
+        },
+        {
+          "name": "Bent-Over Barbell Row",
+          "muscle_group": "Back"
+        },
+        {
+          "name": "Superman Hold",
+          "muscle_group": "Back"
+        }
+      ],
+      [
+        {
+          "name": "Single-Arm Dumbbell Curl w/ Incline Bench",
+          "muscle_group": "Biceps"
+        },
+        {
+          "name": "Seated Alternating Hammer Curl",
+          "muscle_group": "Biceps"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Dumbbell Calf Raise",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Forward Lunge",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Hip Lift",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Calf Raise - Standing",
+          "muscle_group": "Legs"
+        }
+      ],
+      [
+        {
+          "name": "Side-Plank (hip lift)",
+          "muscle_group": "Abdominals"
+        },
+        {
+          "name": "Alternating Heel Touch",
+          "muscle_group": "Abdominals"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Seated Dumbbell Rear Delt Raise",
+          "muscle_group": "Shoulders"
+        },
+        {
+          "name": "Cable External Rotation",
+          "muscle_group": "Shoulders"
+        }
+      ],
+      [
+        {
+          "name": "Dumbbell Kickback",
+          "muscle_group": "Triceps"
+        },
+        {
+          "name": "Overhead Dumbbell Triceps Extension",
+          "muscle_group": "Triceps"
+        }
+      ],
+      [
+        {
+          "name": "Alternating Dumbbell Curl",
+          "muscle_group": "Biceps"
+        },
+        {
+          "name": "Hammer Curl",
+          "muscle_group": "Biceps"
+        }
+      ]
+    ]
+  ],
+  [
+    [
+      [
+        {
+          "name": "Calf Raise - Standing",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Lateral Squat",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Leg Curl",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Calf Press",
+          "muscle_group": "Legs"
+        }
+      ],
+      [
+        {
+          "name": "Heel Touch",
+          "muscle_group": "Abdominals"
+        },
+        {
+          "name": "Alternating Heel Touch",
+          "muscle_group": "Abdominals"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Twisting Dumbbell Bench Press",
+          "muscle_group": "Chest"
+        },
+        {
+          "name": "Pec Deck Fly",
+          "muscle_group": "Chest"
+        },
+        {
+          "name": "Dumbbell Bench Press",
+          "muscle_group": "Chest"
+        },
+        {
+          "name": "Dumbbell Push-Up",
+          "muscle_group": "Chest"
+        }
+      ],
+      [
+        {
+          "name": "Machine Dips",
+          "muscle_group": "Triceps"
+        },
+        {
+          "name": "Towel Triceps Pushdown",
+          "muscle_group": "Triceps"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Quadruped Alternating Superman",
+          "muscle_group": "Back"
+        },
+        {
+          "name": "Bent-Over Hammer Dumbbell Row",
+          "muscle_group": "Back"
+        },
+        {
+          "name": "Single-Arm Dumbbell Row",
+          "muscle_group": "Back"
+        },
+        {
+          "name": "Superman",
+          "muscle_group": "Back"
+        }
+      ],
+      [
+        {
+          "name": "Alternating Hammer Curl",
+          "muscle_group": "Biceps"
+        },
+        {
+          "name": "Hammer Curl",
+          "muscle_group": "Biceps"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Calf Press",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Step-Up",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Seated Leg Curl",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Dumbbell Calf Raise",
+          "muscle_group": "Legs"
+        }
+      ],
+      [
+        {
+          "name": "Sit-Up",
+          "muscle_group": "Abdominals"
+        },
+        {
+          "name": "V-Up",
+          "muscle_group": "Abdominals"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Lying Dumbbell Rear Delt Raise",
+          "muscle_group": "Shoulders"
+        },
+        {
+          "name": "Cable External Rotation",
+          "muscle_group": "Shoulders"
+        }
+      ],
+      [
+        {
+          "name": "Towel Triceps Pushdown",
+          "muscle_group": "Triceps"
+        },
+        {
+          "name": "Tricep Pushdown",
+          "muscle_group": "Triceps"
+        }
+      ],
+      [
+        {
+          "name": "Alternating Hammer Curl",
+          "muscle_group": "Biceps"
+        },
+        {
+          "name": "Machine Curl",
+          "muscle_group": "Biceps"
+        }
+      ]
+    ]
+  ],
+  [
+    [
+      [
+        {
+          "name": "Calf Press",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Reverse Lunge",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Hip Lift",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Calf Raise - Standing",
+          "muscle_group": "Legs"
+        }
+      ],
+      [
+        {
+          "name": "Side-Plank (hip lift)",
+          "muscle_group": "Abdominals"
+        },
+        {
+          "name": "Cross Crunch",
+          "muscle_group": "Abdominals"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Dumbbell Fly",
+          "muscle_group": "Chest"
+        },
+        {
+          "name": "Dumbbell Bench Press",
+          "muscle_group": "Chest"
+        },
+        {
+          "name": "Pec Deck",
+          "muscle_group": "Chest"
+        },
+        {
+          "name": "Machine Bench Press",
+          "muscle_group": "Chest"
+        }
+      ],
+      [
+        {
+          "name": "Tricep Pushdown",
+          "muscle_group": "Triceps"
+        },
+        {
+          "name": "Tricep Pushdown",
+          "muscle_group": "Triceps"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Alternating Superman",
+          "muscle_group": "Back"
+        },
+        {
+          "name": "Bent-Over Hammer Dumbbell Row",
+          "muscle_group": "Back"
+        },
+        {
+          "name": "Lat Pulldown",
+          "muscle_group": "Back"
+        },
+        {
+          "name": "Quadruped Alternating Superman",
+          "muscle_group": "Back"
+        }
+      ],
+      [
+        {
+          "name": "Kneeling Cable Curl",
+          "muscle_group": "Biceps"
+        },
+        {
+          "name": "Single-Arm Dumbbell Curl w/ Incline Bench",
+          "muscle_group": "Biceps"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Calf Press",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Barbell Squat",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Seated Leg Curl",
+          "muscle_group": "Legs"
+        },
+        {
+          "name": "Calf Raise - Standing",
+          "muscle_group": "Legs"
+        }
+      ],
+      [
+        {
+          "name": "V-Up",
+          "muscle_group": "Abdominals"
+        },
+        {
+          "name": "Bent-Knee Crunch",
+          "muscle_group": "Abdominals"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "name": "Dumbbell Front Raise",
+          "muscle_group": "Shoulders"
+        },
+        {
+          "name": "Cable External Rotation",
+          "muscle_group": "Shoulders"
+        }
+      ],
+      [
+        {
+          "name": "Machine Dips",
+          "muscle_group": "Triceps"
+        },
+        {
+          "name": "Single-Arm Towel Triceps Pushdown",
+          "muscle_group": "Triceps"
+        }
+      ],
+      [
+        {
+          "name": "Dumbbell Curl",
+          "muscle_group": "Biceps"
+        },
+        {
+          "name": "Seated Alternating Curl",
+          "muscle_group": "Biceps"
+        }
+      ]
+    ]
+  ]
+]

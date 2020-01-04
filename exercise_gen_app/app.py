@@ -1,9 +1,11 @@
 import logging
 import fpdf
+import pdfkit
 from .utils.execution_timer import execution_time
 from time import time
 from .model import exercise_generator
-from flask import Flask, make_response
+from flask import Flask, make_response, render_template
+import json
 
 app = Flask(__name__)
 
@@ -47,6 +49,31 @@ def generator():
     #             str(round((t_end - t_start)*1000)) + " ms]")
 
 
+@app.route('/exercisehtml')
+# @execution_time
+def exercise_htm():
+
+    t_start = time()
+    with open('exercises.json', 'r') as json_file:
+        exercises = json.load(json_file)
+    t_end = time()
+    days = len(exercises[0])
+    # pdf.output("tutorial.pdf")
+    html = render_template('exercises.html', days=days, exercises=exercises)
+    path_wkhtmltopdf = "C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe"
+    options = {
+        'page-size': 'A4',
+        'margin-top': '0in',
+        'margin-right': '0in',
+        'margin-bottom': '0in',
+        'margin-left': '0in',
+        'encoding': "UTF-8",
+        'no-outline': None,
+        'disable-smart-shrinking': ''
+    }
+    config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
+    pdf = pdfkit.from_string(html, "out.pdf", configuration=config, options=options)
+    return html
 #
 # if __name__ == "__main__":
 #

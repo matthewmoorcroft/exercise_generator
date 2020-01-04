@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+      body{
+          /* min-width: 297mm;
+          min-height: 210mm; */
+          min-width: 297mm;
+          min-height: 210mm;
+          padding: 1mm 1mm 1mm 1mm;
+          /* margin: 10.5mm 10mm 10mm 10.5mm; */
+          margin:0;
+     }
+
+
+
+
+     .rbody, .rhead{
+       border-style: solid;
+       border-width: 1px;
+       border-color: black;
+       max-width:297mm;
+     }
+
+     .rcell{
+       border-right: 1px;
+       border-top:0px;
+       border-left: 0px;
+       border-bottom: 0px;
+       border-style: solid;
+       border-color:black;
+       min-width: {{ 290/days }}mm; /*290/columns*/
+       max-width: {{ 290/days }}mm;/*290/columns*/
+       min-height: 51mm;
+       max-height: 51mm;
+       padding: 0;
+     }
+
+     .days {
+       border-right: 1px;
+       border-top:0px;
+       border-left: 0px;
+       border-bottom: 0px;
+       border-style: solid;
+       border-color:black;
+       min-width: {{ 290/days }}mm; /*290/columns*/
+       max-width: {{ 290/days }}mm;/*290/columns*/
+       min-height: 6mm;
+       max-height: 6mm;
+     }
+
+     .rdata {
+       max-width: {{ 290/days }}mm;/*290/columns*/
+       min-width: {{ 290/days }}mm;/*290/columns*/
+       min-height: 20mm;
+       max-height: 20mm;
+     }
+
+     .exercise-name {
+       max-width: {{ 290/days - 22 }}mm;/*290/columns-12 */
+       min-width: {{ 290/days - 22 }}mm;/*290/columns*/
+
+       border-right: 1px;
+       border-top:0px;
+       border-left: 0px;
+       border-bottom: 0px;
+       border-style: solid;
+       border-color:black;
+     }
+
+     .exercise-sets {
+       max-width: 10mm;/*290/columns*/
+       min-width: 10mm;/*290/columns*/
+       border-right: 1px;
+       border-top:0px;
+       border-left: 0px;
+       border-bottom: 0px;
+       border-style: solid;
+       border-color:black;
+     }
+
+     .exercise-reps {
+       max-width: 10mm;/*290/columns*/
+       min-width: 10mm;/*290/columns*/
+     }
+
+     .rdata:nth-child(even) {
+       background: #F2E6FE;
+       max-width:100%;
+     }
+
+     .rhead {
+       background: lightgrey;
+     }
+
+     table {
+      min-width:100%;
+      max-width:100%;
+      min-height: 100%;
+      max-height: 100%;
+      padding: 0;
+      margin:0;
+      border-collapse: collapse;
+  }
+
+  </style>
+  <meta name="pdfkit-orientation" content="Landscape"/>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr class="rhead">
+        {%for day in range(days)%}
+        <th class="days">{{day+1}}</th>
+        {% endfor %}
+      </tr>
+
+
+    </thead>
+    <tbody>
+      <tr class="rbody">
+        {%for day in range(days)%}
+        <td class="rcell">
+          <table>
+            <tr class="rdata"><td class="exercise-name">Name</td><td class="exercise-sets">Sets</td><td class="exercise-reps">Reps</td></tr>
+          </table>
+        </td>
+
+        {% endfor %}
+      </tr>
+      {% for week in range(4) %}
+      <tr class="rbody">
+        {% for day in range(days) %}
+        <td class="rcell">
+          <table>
+              {% for muscle_group in exercises[week][day]%}
+                {% for exercise in muscle_group %}
+                  <tr class="rdata"><td class="exercise-name">{{exercise.name}}</td><td class="exercise-sets">4</td><td class="exercise-reps">8-12</td></tr>
+                {% endfor %}
+              {% endfor %}
+          </table>
+        </td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>
