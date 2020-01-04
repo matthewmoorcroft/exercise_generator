@@ -1,4 +1,4 @@
-from ..connections.database import Database
+from exercise_gen_app.connections.database import Database
 import logging
 
 logger = logging.getLogger(__name__)
@@ -7,35 +7,35 @@ plans = {
     '3': [
         [
             {
-                'name': "Chest",
+                'muscle_group': "Chest",
                 'number_exercises': 3,
             },
             {
-                'name': "Triceps",
+                'muscle_group': "Triceps",
                 'number_exercises': 3,
             },
         ],
         [
             {
-                'name': "Back",
+                'muscle_group': "Back",
                 'number_exercises': 2,
             },
             {
-                'name': "Biceps",
+                'muscle_group': "Biceps",
                 'number_exercises': 2,
             },
             {
-                'name': "Shoulders",
+                'muscle_group': "Shoulders",
                 'number_exercises': 2,
             },
         ],
         [
             {
-                'name': "Legs",
+                'muscle_group': "Legs",
                 'number_exercises': 4,
             },
             {
-                'name': "Abdominals",
+                'muscle_group': "Abdominals",
                 'number_exercises': 2,
             },
         ],
@@ -43,45 +43,45 @@ plans = {
     '4': [
         [
             {
-                'name': "Chest",
+                'muscle_group': "Chest",
                 'number_exercises': 4,
             },
             {
-                'name': "Triceps",
+                'muscle_group': "Triceps",
                 'number_exercises': 2,
             },
         ],
         [
             {
-                'name': "Back",
+                'muscle_group': "Back",
                 'number_exercises': 4,
             },
             {
-                'name': "Biceps",
+                'muscle_group': "Biceps",
                 'number_exercises': 2,
             },
         ],
         [
             {
-                'name': "Legs",
+                'muscle_group': "Legs",
                 'number_exercises': 4,
             },
             {
-                'name': "Abdominals",
+                'muscle_group': "Abdominals",
                 'number_exercises': 2,
             },
         ],
         [
             {
-                'name': "Shoulders",
+                'muscle_group': "Shoulders",
                 'number_exercises': 2,
             },
             {
-                'name': "Triceps",
+                'muscle_group': "Triceps",
                 'number_exercises': 2,
             },
             {
-                'name': "Biceps",
+                'muscle_group': "Biceps",
                 'number_exercises': 2,
             },
         ],
@@ -89,55 +89,55 @@ plans = {
     '5': [
         [
             {
-                'name': "Legs",
+                'muscle_group': "Legs",
                 'number_exercises': 4,
             },
             {
-                'name': "Abdominals",
+                'muscle_group': "Abdominals",
                 'number_exercises': 2,
             },
         ],
         [
             {
-                'name': "Chest",
+                'muscle_group': "Chest",
                 'number_exercises': 4,
             },
             {
-                'name': "Triceps",
+                'muscle_group': "Triceps",
                 'number_exercises': 2,
             },
         ],
         [
             {
-                'name': "Back",
+                'muscle_group': "Back",
                 'number_exercises': 4,
             },
             {
-                'name': "Biceps",
+                'muscle_group': "Biceps",
                 'number_exercises': 2,
             },
         ],
         [
             {
-                'name': "Legs",
+                'muscle_group': "Legs",
                 'number_exercises': 4,
             },
             {
-                'name': "Abdominals",
+                'muscle_group': "Abdominals",
                 'number_exercises': 2,
             },
         ],
         [
             {
-                'name': "Shoulders",
+                'muscle_group': "Shoulders",
                 'number_exercises': 2,
             },
             {
-                'name': "Triceps",
+                'muscle_group': "Triceps",
                 'number_exercises': 2,
             },
             {
-                'name': "Biceps",
+                'muscle_group': "Biceps",
                 'number_exercises': 2,
             },
         ],
@@ -148,8 +148,9 @@ plans = {
 def get_exercises_from_muscle_group(muscle_group, number_exercises):
     db = Database.get_instance()
 
-    exercises = db.get_exercises_from_muscle_group(muscle_group=muscle_group,
-                                                   number_exercises=number_exercises)
+    exercises = db.get_exercises_from_muscle_group(
+        muscle_group=muscle_group,
+        number_exercises=number_exercises)
     return exercises
 
 
@@ -173,7 +174,7 @@ def week_builder(plan):
         exercise_day = day_builder(day)
         week.append(exercise_day)
 
-    return
+    return week
 
 
 def month_builder(plan):
