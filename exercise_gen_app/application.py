@@ -1,9 +1,9 @@
 import logging
 import fpdf
 import pdfkit
-from .utils.execution_timer import execution_time
+from utils.execution_timer import execution_time
 from time import time
-from .model import exercise_generator
+from model import exercise_generator
 from flask import Flask, make_response, render_template
 import json
 
