@@ -1,10 +1,119 @@
 
-
 #EXERCISE TABLE;
 
 CREATE TABLE public.exercises (
-	bodypart varchar NULL,
+	id serial NOT NULL,
+	name varchar NULL,
+	muscle_group varchar NULL,
 	area varchar NULL,
-	modality varchar NULL,
-	id serial NOT NULL
+	tool varchar NULL
 );
+
+#DATA;
+
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Reverse Crunch','Abdominals','Lower','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Alternating Heel Touch','Abdominals','Lower','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Cross Crunch','Abdominals','Lower','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Front Plank (from knees)','Abdominals','Lower','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Side-Plank (hip lift)','Abdominals','Lower','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('V-Up','Abdominals','Lower','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Bent Knee Sit-Up','Abdominals','Lower','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Bent-Knee Crunch','Abdominals','Lower','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Crunch','Abdominals','Lower','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Heel Touch','Abdominals','Lower','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Sit-Up','Abdominals','Lower','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Assisted Pull-Up','Back','Lower','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Close-Grip Lat Pulldown','Back','Lower','M');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Lat Pulldown','Back','Lower','C');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Pull-Up','Back','Lower','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Wide-Grip Lat Pulldown','Back','Lower','C');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Bent-Over Barbell Row','Back','Lower','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Bent-Over Dumbbell Row','Back','Lower','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Bent-Over Hammer Dumbbell Row','Back','Lower','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Machine Row','Back','Lower','M');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('One Arm Dumbbell Row','Back','Lower','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Seated Cable Row','Back','Lower','C');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Seated Row','Back','Lower','C');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Single-Arm Dumbbell Row','Back','Lower','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Standing Cable Row','Back','Lower','C');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Alternating Dumbbell Curl','Biceps','','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Alternating Hammer Curl','Biceps','','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Barbell Curl','Biceps','','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Bicep Curl','Biceps','','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Dumbbell Curl','Biceps','','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Hammer Curl','Biceps','','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Kneeling Cable Curl','Biceps','','C');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Machine Curl','Biceps','','M');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Seated Alternating Curl','Biceps','','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Seated Alternating Hammer Curl','Biceps','','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Seated Dumbbell Curl','Biceps','','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Seated Hammer Curl','Biceps','','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Single-Arm Barbell Curl','Biceps','','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Single-Arm Dumbbell Curl w/ Incline Bench','Biceps','','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Calf Press','Legs','Gastrocnemius','M');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Calf Raise - Seated','Legs','Gastrocnemius','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Calf Raise - Standing','Legs','Gastrocnemius','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Dumbbell Calf Raise','Legs','Gastrocnemius','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Seated Calf Raise','Legs','Soleus','M');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Chest Press','Chest','Pectoralis','M');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Dumbbell Bench Press','Chest','Pectoralis','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Dumbbell Push-Up','Chest','Pectoralis','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Kneeling Push-Up','Chest','Pectoralis','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Machine Bench Press','Chest','Pectoralis','M');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Machine Vertical Bench Press','Chest','Pectoralis','M');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Push-Up','Chest','Pectoralis','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Twisting Dumbbell Bench Press','Chest','Pectoralis','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Wide-Grip Push-Up','Chest','Pectoralis','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Dumbbell Fly','Chest','Pectoralis','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Pec Deck','Chest','Pectoralis','M');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Pec Deck Fly','Chest','Pectoralis','M');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Hip Lift','Legs','Hamstrings','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Leg Curl','Legs','Hamstrings','M');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Lying Leg Curl','Legs','Hamstrings','M');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Seated Leg Curl','Legs','Hamstrings','M');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Barbell Squat','Legs','Quadriceps','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Dumbbell Lunge','Legs','Quadriceps','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Dumbbell Squat','Legs','Quadriceps','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Dumbbell Step-Up','Legs','Quadriceps','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Forward Lunge','Legs','Quadriceps','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Lateral Squat','Legs','Quadriceps','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Lateral Step-Up','Legs','Quadriceps','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Leg Press','Legs','Quadriceps','M');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Lunge','Legs','Quadriceps','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Lying Machine Squat','Legs','Quadriceps','M');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Machine Hack Squat','Legs','Quadriceps','M');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Reverse Lunge','Legs','Quadriceps','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Step-Up','Legs','Quadriceps','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Leg Extension','Legs','Quadriceps','M');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Alternating Superman','Back','Erector Spinae','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Back Raise','Back','Erector Spinae','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Quadruped Alternating Superman','Back','Erector Spinae','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Superman','Back','Erector Spinae','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Superman Hold','Back','Erector Spinae','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Dumbbell Alternating Shoulder Press','Shoulders','Delts/Traps','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Dumbbell Front Raise','Shoulders','Delts/Traps','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Machine Shoulder Press','Shoulders','Delts/Traps','M');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Single-Arm Dumbbell Shoulder Press','Shoulders','Delts/Traps','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Dumbbell Lateral Raise','Shoulders','Delts/Traps','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Front Plate Raise','Shoulders','Delts/Traps','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Lying Dumbbell External Rotation','Shoulders','Delts/Traps','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Lying Dumbbell Rear Delt Raise','Shoulders','Delts/Traps','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Lying Single-Arm Dumbbell Rear Delt Raise','Shoulders','Delts/Traps','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Seated Dumbbell Rear Delt Raise','Shoulders','Delts/Traps','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Cable External Rotation','Shoulders','Rotator Cuff','C');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Assisted Dips','Triceps','','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Machine Dips','Triceps','','M');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Dumbbell Kickback','Triceps','','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Kneeling Cable Triceps Extension','Triceps','','C');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Lying Single Dumbbell Triceps Extension','Triceps','','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Lying Single-Arm Dumbbell Triceps Extension','Triceps','','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Lying Tricep Extensions','Triceps','','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Overhead Dumbbell Triceps Extension','Triceps','','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Overhead Single Dumbbell Tricep Extension','Triceps','','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Overhead Single-Arm Dumbbell Tricep Extension','Triceps','','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Single-Arm Towel Triceps Pushdown','Triceps','','C');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Towel Triceps Pushdown','Triceps','','C');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Tricep Extensions','Triceps','','FW');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Tricep Pushdown','Triceps','','C');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('Tricep Pushdown','Triceps','','C');
+INSERT INTO exercises (name,muscle_group,area,tool) VALUES ('V-Bar Tricep Pushdown','Triceps','','C');
