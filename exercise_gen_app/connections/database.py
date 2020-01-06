@@ -1,4 +1,5 @@
 import psycopg2
+from os import environ
 from psycopg2.extras import RealDictCursor
 import json
 import logging
@@ -12,11 +13,12 @@ class Database:
 
     def __init__(self):
         try:
+            connection =
             self.conn = psycopg2.connect(
-                """dbname='exercise_gen'
-                  user='matthew'
-                  host='localhost'
-                  password='1245788956'""")
+                f"""dbname='{environ.get('RDS_DB_NAME')}'
+                  user='{environ.get('RDS_USERNAME')}'
+                  host='{environ.get('RDS_HOSTNAME')}'
+                  password='{environ.get('RDS_PASSWORD')}'""")
         except psycopg2.Error:
             print("ERROR: Unable to connect to the database")
 
