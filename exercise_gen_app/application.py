@@ -7,7 +7,7 @@ from .model import exercise_generator
 from flask import Flask, make_response, render_template
 import json
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -25,7 +25,7 @@ logger.addHandler(file_handler)
 logger.addHandler(stream_handler)
 
 
-@app.route('/generator')
+@application.route('/generator')
 @execution_time
 def generator():
 
@@ -41,7 +41,7 @@ def generator():
     pdf.cell(200, 10, txt=str(plan), ln=1, align="C")
     response = make_response(pdf.output(dest='S').encode('latin-1'))
     response.headers.set('Content-Disposition', 'attachment', filename='tutorial.pdf')
-    response.headers.set('Content-Type', 'application/pdf')
+    response.headers.set('Content-Type', 'applicationlication/pdf')
 
     # pdf.output("tutorial.pdf")
     return response
@@ -49,7 +49,7 @@ def generator():
     #             str(round((t_end - t_start)*1000)) + " ms]")
 
 
-@app.route('/exercisehtml')
+@application.route('/exercisehtml')
 # @execution_time
 def exercise_htm():
 
@@ -74,7 +74,8 @@ def exercise_htm():
     config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
     pdf = pdfkit.from_string(html, "out.pdf", configuration=config, options=options)
     return html
-#
-# if __name__ == "__main__":
-#
-#     main()
+
+
+if __name__ == "__main__":
+
+    application.run()
