@@ -13,7 +13,6 @@ class Database:
 
     def __init__(self):
         try:
-            connection =
             self.conn = psycopg2.connect(
                 f"""dbname='{environ.get('RDS_DB_NAME')}'
                   user='{environ.get('RDS_USERNAME')}'
