@@ -3,7 +3,7 @@ import fpdf
 import logging
 import sys
 sys.path.append("/opt/python/current/app/exercise_gen_app")
-from .utils.execution_timer import execution_time
+from utils.execution_timer import execution_time
 from time import time
 from model import exercise_generator
 import json
