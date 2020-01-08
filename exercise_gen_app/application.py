@@ -1,14 +1,13 @@
+from flask import Flask, make_response, render_template
+import json
+from model import exercise_generator
+from time import time
+from utils.execution_timer import execution_time
 import pdfkit
 import fpdf
 import logging
 import sys
 sys.path.append("/opt/python/current/app/exercise_gen_app")
-from utils.execution_timer import execution_time
-from time import time
-from model import exercise_generator
-import json
-from flask import Flask, make_response, render_template
-
 
 
 application = Flask(__name__)
@@ -64,7 +63,8 @@ def exercise_htm():
     days = len(exercises[0])
     # pdf.output("tutorial.pdf")
     html = render_template('exercises.html', days=days, exercises=exercises)
-    path_wkhtmltopdf = "C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe"
+    # path_wkhtmltopdf = "C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe"
+    path_wkhtmltopdf = "/usr/local/bin/wkhtmltopdf"
     options = {
         'page-size': 'A4',
         'margin-top': '0in',
