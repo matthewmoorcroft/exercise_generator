@@ -1,9 +1,10 @@
 import json
 from flask import Flask, make_response, render_template
-from model import exercise_generator
-from time import time
 import sys
 sys.path.append("/opt/python/current/app/exercise_gen_app")
+from model import exercise_generator
+from time import time
+
 from .utils.execution_timer import execution_time
 import logging
 import fpdf
