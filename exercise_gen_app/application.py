@@ -1,14 +1,13 @@
+import logging
+import fpdf
+import pdfkit
+from utils.execution_timer import execution_time
+from time import time
+from model import exercise_generator
 from flask import Flask, make_response, render_template
 import json
 import sys
 sys.path.append("/opt/python/current/app/exercise_gen_app")
-from model import exercise_generator
-from time import time
-from utils.execution_timer import execution_time
-import pdfkit
-import fpdf
-import logging
-
 
 
 application = Flask(__name__)
