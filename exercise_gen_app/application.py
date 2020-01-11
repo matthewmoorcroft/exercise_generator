@@ -6,8 +6,8 @@ from time import time
 from model import exercise_generator
 from flask import Flask, make_response, render_template
 import json
-import sys
-sys.path.append("/opt/python/current/app/exercise_gen_app")
+# import sys
+# sys.path.append("/opt/python/current/app/exercise_gen_app")
 
 
 application = Flask(__name__)
