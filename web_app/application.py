@@ -15,7 +15,7 @@ def generator():
 
 
 @application.route('/exercisehtml')
-def generator():
+def exercisehtml():
     return requests.get(url="workout-gen-pdf.eu-west-2.elasticbeanstalk.com/exercisehtml")
 
 
