@@ -11,12 +11,12 @@ def index():
 
 @application.route('/generator')
 def generator():
-    return requests.get(url="workout-gen-pdf.eu-west-2.elasticbeanstalk.com/generator")
+    return requests.get(url="workout-gen-pdf.eu-west-2.elasticbeanstalk.com/generator").content
 
 
 @application.route('/exercisehtml')
 def exercisehtml():
-    return requests.get(url="workout-gen-pdf.eu-west-2.elasticbeanstalk.com/exercisehtml")
+    return requests.get(url="workout-gen-pdf.eu-west-2.elasticbeanstalk.com/exercisehtml").content
 
 
 if __name__ == '__main__':
