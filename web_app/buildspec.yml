@@ -6,5 +6,5 @@ phases:
       python: 3.8
 artifacts:
   files:
-    - 'web_app/**/*'
+    - '**/*'
   base-directory: 'web_app'

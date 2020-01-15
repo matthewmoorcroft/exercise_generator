@@ -6,5 +6,5 @@ phases:
       python: 3.8
 artifacts:
   files:
-    - 'exercise_gen_app/**/*'
+    - '**/*'
   base-directory: 'exercise_gen_app'
