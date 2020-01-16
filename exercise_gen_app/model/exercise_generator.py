@@ -1,4 +1,4 @@
-from exercise_gen_app.connections.database import Database
+from connections.database import Database
 import logging
 
 logger = logging.getLogger(__name__)
