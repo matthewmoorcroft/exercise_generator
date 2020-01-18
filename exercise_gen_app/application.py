@@ -54,7 +54,7 @@ def generator():
     }
     config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
     pdf = pdfkit.from_string(html, "out.pdf", configuration=config, options=options)
-    return html
+    return pdf
 
 
 @application.route('/exercisehtml')
