@@ -32,24 +32,29 @@ logger.addHandler(stream_handler)
 @execution_time
 def generator():
 
-    pdf = fpdf.FPDF(format='letter')
-    pdf.add_page()
-    pdf.set_font("Arial", size=12)
-
     t_start = time()
-    logger.info("Generating new plan")
+    # with open('exercises.json', 'r') as json_file:
+    #     exercises = json.load(json_file)
     plan = exercise_generator.exercise_builder("4")
     t_end = time()
-
-    pdf.cell(200, 10, txt=str(plan), ln=1, align="C")
-    response = make_response(pdf.output(dest='S').encode('latin-1'))
-    response.headers.set('Content-Disposition', 'attachment', filename='tutorial.pdf')
-    response.headers.set('Content-Type', 'applicationlication/pdf')
-
+    days = len(plan[0])
     # pdf.output("tutorial.pdf")
-    return response
-    # logger.info("Finished generating plan. [RUNTIME: " +
-    #             str(round((t_end - t_start)*1000)) + " ms]")
+    html = render_template('exercises.html', days=days, exercises=plan)
+    # path_wkhtmltopdf = "C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe"
+    path_wkhtmltopdf = "/usr/local/bin/wkhtmltopdf"
+    options = {
+        'page-size': 'A4',
+        'margin-top': '0in',
+        'margin-right': '0in',
+        'margin-bottom': '0in',
+        'margin-left': '0in',
+        'encoding': "UTF-8",
+        'no-outline': None,
+        'disable-smart-shrinking': ''
+    }
+    config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
+    pdf = pdfkit.from_string(html, "out.pdf", configuration=config, options=options)
+    return html
 
 
 @application.route('/exercisehtml')
