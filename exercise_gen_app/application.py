@@ -82,7 +82,7 @@ def exercise_htm():
     }
     config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
     pdf = pdfkit.from_string(html, "out.pdf", configuration=config, options=options)
-    return html
+    return pdf
 
 
 if __name__ == "__main__":
