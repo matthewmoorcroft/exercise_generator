@@ -59,6 +59,21 @@ def generator():
     return response
 
 
+@application.route('/html')
+def html():
+
+    t_start = time()
+    # with open('exercises.json', 'r') as json_file:
+    #     exercises = json.load(json_file)
+    plan = exercise_generator.exercise_builder("4")
+    t_end = time()
+    days = len(plan[0])
+    # pdf.output("tutorial.pdf")
+    html = render_template('exercises.html', days=days, exercises=plan)
+
+    return html
+
+
 if __name__ == "__main__":
 
     application.run(port=5001)
