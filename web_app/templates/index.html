@@ -19,6 +19,19 @@
 
 
     <style>
+      @media only screen and (orientation: landscape) {
+        body {
+          background-image: url(/static/resources/photo-2.jpg);
+          background-size: 100%;
+        }
+      }
+
+      @media only screen and (orientation: portrait) {
+        body {
+          background-image: url(/static/resources/photo-2.jpg);
+          background-size: auto 100%;
+        }
+      }
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -33,10 +46,7 @@
           font-size: 3.5rem;
         }
       }
-      body {
-        background-image: url(/static/resources/photo-2.jpg);
-        background-size: 100%;
-      }
+
 
       #download-text {
         background: rgba(255,255,255,0.3);
