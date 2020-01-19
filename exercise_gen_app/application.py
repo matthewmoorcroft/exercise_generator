@@ -39,8 +39,8 @@ def generator():
     days = len(plan[0])
     # pdf.output("tutorial.pdf")
     html = render_template('exercises.html', days=days, exercises=plan)
-    path_wkhtmltopdf = "C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe"
-    # path_wkhtmltopdf = "/usr/local/bin/wkhtmltopdf"
+    # path_wkhtmltopdf = "C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe"
+    path_wkhtmltopdf = "/usr/local/bin/wkhtmltopdf"
     options = {
         'page-size': 'A4',
         'margin-top': '0in',
