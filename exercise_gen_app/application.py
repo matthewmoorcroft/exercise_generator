@@ -53,7 +53,7 @@ def generator():
         'disable-smart-shrinking': ''
     }
     config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
-    pdf = pdfkit.from_string(html, configuration=config, options=options)
+    pdf = pdfkit.from_string(html, False, configuration=config, options=options)
     response = make_response(pdf.output(dest='S').encode('latin-1'))
     response.headers.set('Content-Disposition', 'attachment', filename='tutorial.pdf')
     response.headers.set('Content-Type', 'applicationlication/pdf')
