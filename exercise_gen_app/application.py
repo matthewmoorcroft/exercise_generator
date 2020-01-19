@@ -53,8 +53,11 @@ def generator():
         'disable-smart-shrinking': ''
     }
     config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
-    pdf = pdfkit.from_string(html, "out.pdf", configuration=config, options=options)
-    return pdf
+    pdf = pdfkit.from_string(html, configuration=config, options=options)
+    response = make_response(pdf.output(dest='S').encode('latin-1'))
+    response.headers.set('Content-Disposition', 'attachment', filename='tutorial.pdf')
+    response.headers.set('Content-Type', 'applicationlication/pdf')
+    return response
 
 
 @application.route('/exercisehtml')
@@ -82,7 +85,10 @@ def exercise_htm():
     }
     config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
     pdf = pdfkit.from_string(html, "out.pdf", configuration=config, options=options)
-    return pdf
+    response = make_response(pdf.output(dest='S').encode('latin-1'))
+    response.headers.set('Content-Disposition', 'attachment', filename='tutorial.pdf')
+    response.headers.set('Content-Type', 'applicationlication/pdf')
+    return response
 
 
 if __name__ == "__main__":
