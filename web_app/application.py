@@ -18,24 +18,5 @@ def generator():
     return response
 
 
-@application.route('/generator_one')
-def generator_one():
-    pdf = requests.get(url="http://172.31.16.8/generator").content
-    response = make_response(pdf)
-    response.headers.set('Content-Disposition', 'attachment', filename='tutorial.pdf')
-    response.headers.set('Content-Type', 'applicationlication/pdf')
-    return requests.get(url="http://172.31.16.8/generator")
-
-
-@application.route('/exercisehtml')
-def exercisehtml():
-    # return requests.get(url="http://workout-gen-pdf.eu-west-2.elasticbeanstalk.com/exercisehtml").content
-    pdf = requests.get(url="http://172.31.16.8/exercisehtml").content
-    response = make_response(pdf)
-    response.headers.set('Content-Disposition', 'attachment', filename='tutorial.pdf')
-    response.headers.set('Content-Type', 'applicationlication/pdf')
-    return response
-
-
 if __name__ == '__main__':
     application.run()
