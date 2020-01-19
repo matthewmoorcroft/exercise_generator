@@ -34,8 +34,18 @@
         }
       }
       body {
-        background-image: url(/static/resources/photo-2.jpg) 
+        background-image: url(/static/resources/photo-2.jpg);
+        background-size: 100%;
       }
+
+      #download-text {
+        background: rgba(255,255,255,0.3);
+        margin-left: 50vh;
+        margin-right: 50vh;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
     </style>
     <!-- Custom styles for this template -->
   </head>
@@ -43,7 +53,7 @@
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="navbar mb-auto">
         <div class="inner">
-          <h3 class="navbar-brand">Workout Generator</h3>
+          <!-- <h3 class="navbar-brand">Workout Generator</h3> -->
           <!-- <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">Features</a>
@@ -52,7 +62,7 @@
         </div>
       </header>
 
-      <main role="main" class="inner cover">
+      <main role="main" class="inner cover" id="download-text">
         <h1 class="cover-heading">Generate your own workout table</h1>
         <p class="lead">This page offers the tools to generate randomized exercises to assist you in the gym, so you only have to focus on reaching your objectives.</p>
         <p class="lead">
