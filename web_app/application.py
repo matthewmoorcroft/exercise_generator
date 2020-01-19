@@ -25,7 +25,7 @@ def exercisehtml():
     response = make_response(pdf)
     response.headers.set('Content-Disposition', 'attachment', filename='tutorial.pdf')
     response.headers.set('Content-Type', 'applicationlication/pdf')
-    return reponse
+    return response
 
 
 if __name__ == '__main__':
