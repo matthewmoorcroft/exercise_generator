@@ -1,5 +1,4 @@
 import logging
-import fpdf
 import pdfkit
 from utils.execution_timer import execution_time
 from time import time
@@ -54,10 +53,26 @@ def generator():
     }
     config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
     pdf = pdfkit.from_string(html, False, configuration=config, options=options)
-    response = make_response(pdf.output(dest='S').encode('latin-1'))
-    response.headers.set('Content-Disposition', 'attachment', filename='tutorial.pdf')
+    response = make_response(pdf)
+    response.headers.set('Content-Disposition', 'attachment', filename='workout.pdf')
     response.headers.set('Content-Type', 'applicationlication/pdf')
     return response
+
+
+@application.route('/html')
+# @execution_time
+def generator_html():
+
+    # t_start = time()
+    # with open('exercises.json', 'r') as json_file:
+    #     exercises = json.load(json_file)
+    plan = exercise_generator.exercise_builder("4")
+    # t_end = time()
+    days = len(plan[0])
+    # pdf.output("tutorial.pdf")
+    html = render_template('exercises.html', days=days, exercises=plan)
+
+    return html
 
 
 @application.route('/exercisehtml')
@@ -93,4 +108,4 @@ def exercise_htm():
 
 if __name__ == "__main__":
 
-    application.run()
+    application.run(port=5001)
