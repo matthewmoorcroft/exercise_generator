@@ -55,7 +55,7 @@ def generator():
     pdf = pdfkit.from_string(html, False, configuration=config, options=options)
     response = make_response(pdf)
     response.headers.set('Content-Disposition', 'attachment', filename='workout.pdf')
-    response.headers.set('Content-Type', 'applicationlication/pdf')
+    response.headers.set('Content-Type', 'application/pdf')
     return response
 
 

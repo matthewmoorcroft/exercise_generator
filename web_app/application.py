@@ -14,7 +14,7 @@ def generator():
     pdf = requests.get(url="http://172.31.16.8/generator").content
     response = make_response(pdf)
     response.headers.set('Content-Disposition', 'attachment', filename='workout.pdf')
-    response.headers.set('Content-Type', 'applicationlication/pdf')
+    response.headers.set('Content-Type', 'application/pdf')
     return response
 
 
@@ -24,7 +24,7 @@ def exercisehtml():
     pdf = requests.get(url="http://172.31.16.8/exercisehtml").content
     response = make_response(pdf)
     response.headers.set('Content-Disposition', 'attachment', filename='tutorial.pdf')
-    response.headers.set('Content-Type', 'applicationlication/pdf')
+    response.headers.set('Content-Type', 'application/pdf')
     return response
 
 
