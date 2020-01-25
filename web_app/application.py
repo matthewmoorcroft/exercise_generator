@@ -11,7 +11,7 @@ def index():
 
 @application.route('/generator')
 def generator():
-    pdf = requests.get(url="http://172.31.16.8/generator").content
+    pdf = requests.get(url="http://ip-172-31-43-191.eu-west-2.compute.internal/generator").content
     response = make_response(pdf)
     response.headers.set('Content-Disposition', 'attachment', filename='workout.pdf')
     response.headers.set('Content-Type', 'application/pdf')
@@ -21,7 +21,8 @@ def generator():
 @application.route('/exercisehtml')
 def exercisehtml():
     # return requests.get(url="http://workout-gen-pdf.eu-west-2.elasticbeanstalk.com/exercisehtml").content
-    pdf = requests.get(url="http://172.31.16.8/exercisehtml").content
+    pdf = requests.get(
+        url="http://ip-172-31-43-191.eu-west-2.compute.internal/exercisehtml").content
     response = make_response(pdf)
     response.headers.set('Content-Disposition', 'attachment', filename='tutorial.pdf')
     response.headers.set('Content-Type', 'application/pdf')
